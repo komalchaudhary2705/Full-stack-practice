@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  /* border-bottom: 1px solid; */
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+header nav #logo {
+  width: 180px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+nav #nav-menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+nav #contact {
+  background: transparent;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 30pc;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+nav #contact i {
+  font-style: 30px;
+}
+
+/* hero section css */
+#hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background image */
+  background-image: url(../images/bg3.jpg),url(../images/bg1.webp);
+  background-position: left ,right, bottom;
+  background-size: contain , contain;
+  background-repeat: no-repeat;
+}
+
+#hero #more-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+#hero #more-btn i {
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#hero p {
+  font-size: 90px;
+  font-weight: semibold;
+}
+
+/* content section */
+#content{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
