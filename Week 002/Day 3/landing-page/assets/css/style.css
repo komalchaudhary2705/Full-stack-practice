@@ -63,13 +63,17 @@ nav #contact i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background image */
-  background-image: url(../images/bg3.jpg),url(../images/bg1.webp);
-  background-position: left ,right, bottom;
-  background-size: contain , contain;
-  background-repeat: no-repeat;
+  position: relative;
 }
-
+#hero #hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
+}
 #hero #more-btn {
   background-color: transparent;
   outline: none;
@@ -82,17 +86,44 @@ nav #contact i {
 
 #hero #more-btn i {
   border: 1px solid;
-  padding: 10px 20px;
+  padding: 8px 30px;
   border-radius: 30px;
 }
 #hero p {
   font-size: 90px;
   font-weight: semibold;
 }
+/* #hero #hero-images img{
+  position: absolute;
+} */
+#hero #img1{
+width: 330px;
+/* height: 600px; */
+position: absolute;
+top: 150px;
+left: 150px;
+
+}
+#hero #img2{
+width: 250px;
+height: 250px;
+position:absolute;
+right: 350px;
+top: 90px;
+}
+
+#hero #img3{
+width: 300px;
+height: 300px;
+position:absolute;
+right: 100px;
+top:390px;
+}
+
 
 /* content section */
-#content{
-    width: 100%;
-    height: 200px;
-    background-color: black;
+#content {
+  width: 100%;
+  height: 200px;
+  background-color: black;
 }
