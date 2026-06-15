@@ -76,7 +76,7 @@ nav #contact i {
 }
 #outline{
   position: relative;
-  display: inline-block;
+ 
 }
 
 #outline::after{
