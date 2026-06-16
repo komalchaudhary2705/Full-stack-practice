@@ -62,7 +62,7 @@ nav .contact::before {
   position: absolute;
   right: 0;
   left: -110%;
-  transition: 0.4s ease;
+  transition: 0.7s ease;
 }
 /* hover animation */
 nav .contact:hover::before {
