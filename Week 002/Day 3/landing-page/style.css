@@ -41,7 +41,7 @@ nav #nav-menu {
   align-items: center;
 }
 
-nav #contact {
+nav .contact {
   background: transparent;
   padding: 10px 20px;
   border: 1px solid #ccc;
@@ -50,11 +50,29 @@ nav #contact {
   display: flex;
   align-items: center;
   gap: 5px;
+  position: relative;
+  overflow: hidden;
 }
-nav #contact i {
-  font-style: 30px;
+nav .contact::before {
+  content: "";
+  background-color: #00eb8f;
+  width: 110%;
+  height: 60px;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  left: -110%;
+  transition: 0.4s ease;
+}
+/* hover animation */
+nav .contact:hover::before {
+  left: 0;
 }
 
+nav .contact i {
+  font-style: 30px;
+}
+/* ================================== */
 /* hero section css */
 #hero {
   width: 100%;
@@ -74,6 +92,8 @@ nav #contact i {
   z-index: 1;
   margin-top: 50px;
 }
+
+/* outline image css */
 #outline {
   position: relative;
 }
@@ -89,6 +109,7 @@ nav #contact i {
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* ================== */
 #hero #more-btn {
   background-color: transparent;
   outline: none;
@@ -96,22 +117,37 @@ nav #contact i {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 20px;
+  font-size: 27px;
   margin-top: 25px;
 }
 
-#hero #more-btn i {
-  border: 1px solid;
-  padding: 8px 30px;
+#hero #more-btn #icon {
+  border: 1px solid #ccc;
+  padding: 1px 20px;
   border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+#hero #more-btn #icon:before {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 45px;
+  right: 0;
+  top: 0;
+  left: -120%;
+  background-color: #00eb8f;
+  transition: 0.6s ease;
+  z-index: -1;
+}
+#hero #more-btn #icon:hover::before {
+  left: 0;
 }
 #hero p {
   font-size: 90px;
   font-weight: semibold;
 }
-/* #hero #hero-images img{
-  position: absolute;
-} */
+
 #hero #img1 {
   width: 330px;
   /* height: 600px; */
