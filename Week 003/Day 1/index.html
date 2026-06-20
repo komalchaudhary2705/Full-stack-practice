@@ -147,17 +147,20 @@
       }
 
       /* Task 4 Gallery */
-
       .gallery {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+      }
+      .gallery .g {
+        display: flex;
+        flex-wrap: wrap;
         gap: 20px;
       }
 
       .gallery img {
-        width: 26%;
+        width: 30%;
         height: 200px;
         border-radius: 15px;
         transition: 0.4s;
@@ -221,17 +224,19 @@
         <h1>Task 4: Animated Image Gallery</h1>
 
         <div class="gallery">
-          <img src="images/book-1.png" />
+          <div class="g">
+            <img src="images/book-1.png" />
+            <img src="images/book-2.png" />
+            <img src="images/book-3.png" />
 
-          <img src="images/book-2.png" />
+            <img src="images/book-4.png" />
+            <img src="images/book-3.png" />
+            <img src="images/book-6.png" />
 
-          <img src="images/book-3.png" />
-
-          <img src="images/book-4.png" />
-
-          <img src="images/book-3.png" />
-
-          <img src="images/book-6.png" />
+            <img src="images/book-1.png" />
+            <!-- <img src="images/book-2.png" />
+            <img src="images/book-3.png" /> -->
+          </div>
         </div>
       </div>
     </section>
