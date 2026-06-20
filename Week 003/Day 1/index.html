@@ -149,13 +149,15 @@
       /* Task 4 Gallery */
 
       .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         gap: 20px;
       }
 
       .gallery img {
-        width: 100%;
+        width: 26%;
         height: 200px;
         border-radius: 15px;
         transition: 0.4s;
