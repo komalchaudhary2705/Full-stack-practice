@@ -1,20 +1,5 @@
-// 96–100 → A
 
-// 91–95 → A+
-
-// 86–90 → B
-
-// 71–85 → B+
-
-// 61–70 → C
-
-// 51–60 → D
-
-// 41–50 → E
-
-// 0–40 → F
-
-let marks = 95;
+let marks = -1;
 
 if (marks <= 100 && marks > 95) {
   document.write(`Your marks are: ${marks} and your Grade is A`);
